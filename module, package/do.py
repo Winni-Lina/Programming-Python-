@@ -15,10 +15,16 @@
 # print(gp)
 
 
+# from travel2 import *
+# ilsan.이지()
+# gp = gangreung.GangreungPackage()
+# print(gp)
+# 
+# from travel2 import *
+# ilsan.이지()
+
 from travel2 import *
 ilsan.이지()
 gp = gangreung.GangreungPackage()
 print(gp)
 
-from travel2 import *
-ilsan.이지()
