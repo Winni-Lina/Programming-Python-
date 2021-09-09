@@ -54,6 +54,8 @@
 
 # 7. 내 생일이 며칠 남았는지?
 import datetime
+import random
+
 now = datetime.datetime.now()
 birth = datetime.datetime(2022, 1, 4)
 if birth<now:
@@ -82,5 +84,10 @@ while True:
 # 그냥 enter면 반복 끝내자
 
 #랜덤으로 섞자
+random.shuffle(list_class)
 #출력하다
+print(list_class)
+print("자리\t학생번호")
+for index, number in enumerate(list_class):
+    print(f"{index}\t{number}")
 
