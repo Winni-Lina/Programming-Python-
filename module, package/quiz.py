@@ -28,7 +28,7 @@
 # 4. 1~9 숫자로 중복되지 않은 숫자 세자리를 뽑는 방법은?(185:O, 212:X)
 # import random
 #
-# list_r = random.sample(1, 9+1, 3)
+# list_r = random.sample(range(1, 9+1), 3)
 # print("".join(str(n) for n in list_r))
 # print("".join(map(str, list_r)))
 
