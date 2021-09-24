@@ -1,6 +1,5 @@
 from baseball_game_engine import make_quiz, check
 from custom_error import InvalidCountError
-
 answer = make_quiz()
 
 #무한 반복
@@ -14,7 +13,9 @@ while True:
     except ValueError:
         continue
     if len(player) != 3:
-        raise InvalidCountError("3자리가 아닙니다.")
+        #raise InvalidCountError("3자리가 아닙니다.")
+        print(f'입력한 숫자의 개수가 정답과 다릅니다. 정답: {len(answer)} 글자')
+        continue
 
 # 출력하자
     print(f"{player}\tstrike: {strike}\tball: {ball}")
