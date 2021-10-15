@@ -31,7 +31,11 @@ while True:
 # 숫자 3자리 중복없이 묻자
     player = input("숫자 세자리는?(t: top3)")
     if player == "t":
-        history = load_history()
+        try:
+            history = load_history()
+        except FileNotFoundError:
+            print('history 파일이 없어요. ㅠㅠ')
+            continue
         print(history)
         continue
 
