@@ -14,7 +14,7 @@ class TictactoeGUI:
         self.root.resizable(width=False, height=False)
 
     def click_handler(self, event):
-
+        pass
     def draw_board(self):
         pass
 
